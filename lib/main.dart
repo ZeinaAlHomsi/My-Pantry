@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'pages/home.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyPantryApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyPantryApp extends StatelessWidget {
+  const MyPantryApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'MyPantry',
       debugShowCheckedModeBanner: false,
-      title: 'My Pantry',
-      home: Home(),
+      theme: ThemeData(useMaterial3: true),
+      home: const HomePage(),
     );
   }
 }
