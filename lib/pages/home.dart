@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<PantryItem> _items = [];
   static const String _apiBaseUrl =
-      "http://127.0.0.1/MyPantry_api/MyPantry_api.php";
+      "http://mypantry.atwebpages.com/api/MyPantry_api.php?action=items";
   PantryCategory? _selectedCategory; // null = All
 
   bool _loading = true;
